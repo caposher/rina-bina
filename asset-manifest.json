@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rina-bina/static/css/main.073c9b0a.css",
+    "main.js": "/rina-bina/static/js/main.b3555ee6.js",
+    "static/js/787.531f9192.chunk.js": "/rina-bina/static/js/787.531f9192.chunk.js",
+    "static/media/logo.svg": "/rina-bina/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/rina-bina/index.html",
+    "main.073c9b0a.css.map": "/rina-bina/static/css/main.073c9b0a.css.map",
+    "main.b3555ee6.js.map": "/rina-bina/static/js/main.b3555ee6.js.map",
+    "787.531f9192.chunk.js.map": "/rina-bina/static/js/787.531f9192.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.b3555ee6.js"
+  ]
+}
