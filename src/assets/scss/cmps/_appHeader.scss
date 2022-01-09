@@ -1,0 +1,16 @@
+.app-header {
+  // background-image: url('../../imgs/elements/header-ilus.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 11vh;
+  padding-left: 10px;
+  padding-top: 12px;
+  margin-bottom: 50px;
+  min-width: 100%;
+  .logo {
+    min-height: 78px;
+    max-height: 102px;
+    height: 7.5vw;
+    cursor: pointer;
+  }
+}

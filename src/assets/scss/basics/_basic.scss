@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Ruda-Regular, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: #92968d;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+
+  * {
+    pointer-events: none;
+  }
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+}

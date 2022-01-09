@@ -1,0 +1,10 @@
+.home-button {
+  position: fixed;
+  width: 130px;
+  bottom: 20px;
+  right: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
