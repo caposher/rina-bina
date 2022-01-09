@@ -24,7 +24,7 @@ class App extends Component {
         <AppHeader backgroundImg={this.state.themeImg} />
         <section className='mainApp container'>
           <NavBar changeTheme={this.setTheme} />
-          <section>
+          <section className='content-area'>
             <Switch>
               <Route component={ContactPage} path='/contact/'></Route>
               <Route component={RecommendationPage} path='/recommendations/'></Route>
