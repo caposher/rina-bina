@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/rina-bina/static/css/main.01ca0cf8.css",
-    "main.js": "/rina-bina/static/js/main.0eeb9c2e.js",
+    "main.css": "/rina-bina/static/css/main.4b01a80d.css",
+    "main.js": "/rina-bina/static/js/main.05792f76.js",
     "static/media/header-contact.png": "/rina-bina/static/media/header-contact.4446488628b1d54bea47.png",
+    "static/media/about.png": "/rina-bina/static/media/about.597e8a95901525f5df21.png",
     "static/media/header-illustrations.png": "/rina-bina/static/media/header-illustrations.794ec34c0ac2f8f97ec9.png",
     "static/media/header-branding.png": "/rina-bina/static/media/header-branding.0f2d3c2fcf9fdbc9ac4b.png",
     "static/media/header-recommendations.png": "/rina-bina/static/media/header-recommendations.55eee58261bfc40f8a9f.png",
+    "static/media/paper3.png": "/rina-bina/static/media/paper3.4614b2f4913a1469bbf7.png",
     "static/media/home-illustrations.png": "/rina-bina/static/media/home-illustrations.521ce4ae8324a3029be8.png",
     "static/media/קקלפים 4.jpg": "/rina-bina/static/media/קקלפים 4.b2b01f068978b0529b3f.jpg",
     "static/media/קלפים.jpg": "/rina-bina/static/media/קלפים.05fe361d2849728c52fb.jpg",
     "static/media/קראסט.jpg": "/rina-bina/static/media/קראסט.ac3aae9ede00fc186ac2.jpg",
     "static/media/דרקון.jpg": "/rina-bina/static/media/דרקון.a7e6da345c0c512b248b.jpg",
     "static/media/אני.jpg": "/rina-bina/static/media/אני.168b2d3454474df51a0b.jpg",
+    "static/media/OpenSans-Medium.ttf": "/rina-bina/static/media/OpenSans-Medium.f0cdede053a22b990af8.ttf",
+    "static/media/OpenSans-Regular.ttf": "/rina-bina/static/media/OpenSans-Regular.d7d7b8359eeb9cddfba6.ttf",
+    "static/media/OpenSans-Bold.ttf": "/rina-bina/static/media/OpenSans-Bold.6e27168fc8a5a200a026.ttf",
     "static/media/לולה.jpg": "/rina-bina/static/media/לולה.7f9edce9af4d8d9609ed.jpg",
     "static/media/השיער של תמר 1.jpg": "/rina-bina/static/media/השיער של תמר 1.a2e9fd5004fe3afa1cd4.jpg",
     "static/media/קלפים 3.jpg": "/rina-bina/static/media/קלפים 3.d1b80648b5e5fbd9dad4.jpg",
@@ -43,11 +48,11 @@
     "static/media/Ruda-Bold.ttf": "/rina-bina/static/media/Ruda-Bold.f1730378958d40cee1fa.ttf",
     "static/media/logo.png": "/rina-bina/static/media/logo.8f72da5613ff70a0ed49.png",
     "index.html": "/rina-bina/index.html",
-    "main.01ca0cf8.css.map": "/rina-bina/static/css/main.01ca0cf8.css.map",
-    "main.0eeb9c2e.js.map": "/rina-bina/static/js/main.0eeb9c2e.js.map"
+    "main.4b01a80d.css.map": "/rina-bina/static/css/main.4b01a80d.css.map",
+    "main.05792f76.js.map": "/rina-bina/static/js/main.05792f76.js.map"
   },
   "entrypoints": [
-    "static/css/main.01ca0cf8.css",
-    "static/js/main.0eeb9c2e.js"
+    "static/css/main.4b01a80d.css",
+    "static/js/main.05792f76.js"
   ]
 }
