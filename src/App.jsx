@@ -11,6 +11,7 @@ import { RecommendationPage } from './pages/recommendation-page';
 
 class App extends Component {
   state = {
+    isHomePage: true,
     themeImg: 'illustrations',
   };
 
@@ -18,12 +19,16 @@ class App extends Component {
     this.setState({ themeImg: theme });
   };
 
+  changePage = (state) => {
+    this.setState({ isHomePage: state });
+  };
+
   render() {
     return (
       <Router>
-        <AppHeader backgroundImg={this.state.themeImg} />
+        <AppHeader isHomePage={this.state.isHomePage} backgroundImg={this.state.themeImg} />
         <section className='mainApp container'>
-          <NavBar changeTheme={this.setTheme} />
+          <NavBar isHomePage={this.state.isHomePage} changeTheme={this.setTheme} />
           <section className='content-area'>
             <Switch>
               <Route component={ContactPage} path='/contact/'></Route>
@@ -33,7 +38,7 @@ class App extends Component {
               <Route component={HomePage} path='/'></Route>
             </Switch>
           </section>
-          <HomeButton buttonImg={this.state.themeImg} />
+          <HomeButton isHomePage={this.state.isHomePage} buttonImg={this.state.themeImg} />
         </section>
       </Router>
     );

@@ -13,7 +13,7 @@ export function IllustrationPage() {
   const images = importAll(require.context(`../assets/imgs/illustration/`, false, /\.(png|jpe?g|svg)$/));
 
   const test = (ev) => {
-    debugger;
+    debugger; //TODO: add logic
   };
 
   return (

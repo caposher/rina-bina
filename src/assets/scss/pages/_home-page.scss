@@ -1,0 +1,26 @@
+.home-page {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+
+  .title {
+    margin-top: 70px;
+    padding: 10px;
+    font-size: 40px;
+    font-family: Ruda-Bold;
+    color: white;
+  }
+
+  .images-container {
+    justify-content: center;
+    gap: 150px;
+    display: flex;
+    max-width: 100%;
+    > * {
+      max-width: 220px;
+    }
+  }
+}

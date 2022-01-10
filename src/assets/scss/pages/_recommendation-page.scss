@@ -1,0 +1,21 @@
+.recommendation-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95%;
+  .rec-container {
+    direction: rtl;
+    background-image: url(../../imgs/elements/paper3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(90% - 70ch);
+    max-width: 70ch;
+    min-width: 50ch;
+    padding: 35px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    font-family: OpenSans-Medium;
+    color: black;
+    white-space: pre-line;
+  }
+}
