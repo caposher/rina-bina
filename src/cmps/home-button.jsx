@@ -1,22 +1,31 @@
-import { useHistory } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
-export function HomeButton({ buttonImg, isHomePage }) {
-  const history = useHistory();
+function _HomeButton({ history }) {
+  const pathName = history.location.pathname;
+
+  function setBackgroundImg() {
+    const img = pathName.split('/')[1];
+    const bgImg = require(`../assets/imgs/elements/home-${img}.png`);
+    return bgImg;
+  }
+
   const backHome = () => {
-    if (history.location.pathname !== '/') {
+    if (pathName !== '/') {
       history.push('/');
     }
   };
 
   function showBtn() {
-    if (isHomePage) return <></>;
+    if (pathName === '/') return <></>;
     else
       return (
         <section onClick={backHome} className='home-button'>
-          <img src={require(`../assets/imgs/elements/home-${buttonImg}.png`)} alt='back home' />
+          <img src={setBackgroundImg()} alt='back home' />
         </section>
       );
   }
 
   return showBtn();
 }
+
+export const HomeButton = withRouter(_HomeButton);

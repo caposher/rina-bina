@@ -2,11 +2,16 @@
   // background-image: url('../../imgs/elements/header-ilus.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 11vh;
+  height: 6em;
   padding-left: 10px;
   padding-top: 12px;
-  margin-bottom: 50px;
   min-width: 100%;
+  margin-bottom: 10px;
+
+  @media (min-width: 800px) {
+    margin-bottom: 50px;
+  }
+
   .logo {
     min-height: 78px;
     max-height: 102px;

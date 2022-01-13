@@ -1,21 +1,27 @@
 // import background from '../assets/imgs/elements/header-ilus.png';
 
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import { withRouter } from 'react-router-dom';
 
-export function AppHeader({ backgroundImg, isHomePage }) {
-  const history = useHistory();
-  const bgImg = require(`../assets/imgs/elements/header-${backgroundImg}.png`);
+function _AppHeader({ history }) {
+  const pathName = history.location.pathname;
+
+  function setBackgroundImg() {
+    const img = pathName.split('/')[1];
+    const bgImg = require(`../assets/imgs/elements/header-${img}.png`);
+    return bgImg;
+  }
+
   const backHome = () => {
-    if (history.location.pathname !== '/') {
+    if (pathName !== '/') {
       history.push('/');
     }
   };
 
   function showHeader() {
-    if (isHomePage) return <></>;
+    if (pathName === '/') return <></>;
     else
       return (
-        <section className='app-header container' style={{ backgroundImage: `url(${bgImg})` }}>
+        <section className='app-header container' style={{ backgroundImage: `url(${setBackgroundImg()})` }}>
           <img
             onClick={backHome}
             className='logo'
@@ -28,3 +34,5 @@ export function AppHeader({ backgroundImg, isHomePage }) {
 
   return showHeader();
 }
+
+export const AppHeader = withRouter(_AppHeader);

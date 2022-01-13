@@ -23,7 +23,9 @@ My services are super professional starting from stage of a creative idea and en
 Feel free to contact me:`;
   return (
     <section className='contact-page'>
-      <img src={require('../assets/imgs/elements/about.png')} alt='rina lev' />
+      <div>
+        <img src={require('../assets/imgs/elements/about.png')} alt='rina lev' />
+      </div>
       <section className='text-container'>
         <p className='txt-he'>{textHe}</p>
         <p>{textEn}</p>

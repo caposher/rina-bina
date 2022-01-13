@@ -1,10 +1,26 @@
 .contact-page {
-  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 40px;
+  width: 100%;
   background-image: url(../../imgs/elements/paper3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 40px;
-  margin-left: 50px;
+  background-position-x: center;
+  padding: 80px 15px;
+
+  @media (min-width: 800px) {
+    align-items: unset;
+    flex-direction: row-reverse;
+    padding: 65px 30px;
+  }
+
+  @media (min-width: 1200px) {
+    background-position-x: unset;
+    margin: 0 5em;
+  }
 
   .text-container {
     display: flex;
@@ -15,16 +31,29 @@
 
   img {
     float: right;
+    width: 100%;
     max-width: 350px;
+    min-width: 150px;
     margin-left: 25px;
     margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px black;
   }
   p {
     color: black;
-    padding-bottom: 30px;
     white-space: pre-line;
-    max-width: 90ch;
-    padding-left: 75px;
+    padding-bottom: 50px;
+    max-width: 100ch;
+    font-size: 14px;
+
+    @media (min-width: 800px) {
+    }
+
+    @media (min-width: 1200px) {
+      padding-bottom: 100px;
+      padding-left: 75px;
+      font-size: 14px;
+    }
   }
   .txt-he {
     font-family: OpenSans-Medium;
@@ -35,6 +64,9 @@
   h2 {
     color: black;
     padding-bottom: 30px;
+    @media (min-width: 800px) {
+      margin-top: -50px;
+    }
   }
 
   form {

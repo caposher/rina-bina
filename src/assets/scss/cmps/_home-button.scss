@@ -1,8 +1,12 @@
 .home-button {
   position: fixed;
-  width: 130px;
-  bottom: 20px;
   right: 10px;
+  width: 13vw;
+  bottom: min(2vw, 40px);
+  @media (min-width: 800px) {
+    width: 130px;
+    bottom: 20px;
+  }
 
   &:hover {
     cursor: pointer;

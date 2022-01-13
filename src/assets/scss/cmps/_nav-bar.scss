@@ -1,6 +1,16 @@
 .nav-bar {
   display: flex;
   flex-direction: column;
+
+  position: fixed;
+  background: rgb(30, 31, 28);
+  height: 75vh;
+  top: 130px;
+  left: -300px;
+  padding: 0.5em;
+  z-index: 10;
+  transition: left 0.3s;
+
   .page-link {
     display: flex;
     align-items: center;
@@ -22,7 +32,45 @@
       color: white;
     }
   }
+  @media (min-width: 800px) {
+    position: static;
+    padding: 0;
+  }
 }
 .link-active {
   color: white;
+}
+
+.nav-btn {
+  left: 5px;
+  top: 100px;
+  position: absolute;
+  padding: 10px;
+  width: 40px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: unset;
+  border-radius: 2px;
+  background-color: #333;
+  color: white;
+  box-shadow: inset 0px 0px 3px 0px black;
+  z-index: 15;
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.scroll-prev {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+.show {
+  left: 0;
+  overflow-y: hidden; // width: 100%;
 }

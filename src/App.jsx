@@ -11,24 +11,25 @@ import { RecommendationPage } from './pages/recommendation-page';
 
 class App extends Component {
   state = {
-    isHomePage: true,
-    themeImg: 'illustrations',
+    showMenu: false,
   };
 
-  setTheme = (theme) => {
-    this.setState({ themeImg: theme });
-  };
-
-  changePage = (state) => {
-    this.setState({ isHomePage: state });
+  toggleMenu = () => {
+    this.setState((prevState) => {
+      return { showMenu: !prevState.showMenu };
+    });
   };
 
   render() {
     return (
       <Router>
-        <AppHeader isHomePage={this.state.isHomePage} backgroundImg={this.state.themeImg} />
+        <AppHeader />
         <section className='mainApp container'>
-          <NavBar isHomePage={this.state.isHomePage} changeTheme={this.setTheme} />
+          <button onClick={this.toggleMenu} className='nav-btn'>
+            ?{/* <FontAwesomeIcon icon={['far', 'fa-bell']} /> */}
+            {/* <i className='fas fa-bars'></i> */}
+          </button>
+          <NavBar showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} />
           <section className='content-area'>
             <Switch>
               <Route component={ContactPage} path='/contact/'></Route>
@@ -38,7 +39,7 @@ class App extends Component {
               <Route component={HomePage} path='/'></Route>
             </Switch>
           </section>
-          <HomeButton isHomePage={this.state.isHomePage} buttonImg={this.state.themeImg} />
+          <HomeButton />
         </section>
       </Router>
     );
