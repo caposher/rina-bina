@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/rina-bina/static/css/main.4b01a80d.css",
-    "main.js": "/rina-bina/static/js/main.05792f76.js",
+    "main.css": "/rina-bina/static/css/main.03fdb5e9.css",
+    "main.js": "/rina-bina/static/js/main.d68810bb.js",
     "static/media/header-contact.png": "/rina-bina/static/media/header-contact.4446488628b1d54bea47.png",
     "static/media/about.png": "/rina-bina/static/media/about.597e8a95901525f5df21.png",
     "static/media/header-illustrations.png": "/rina-bina/static/media/header-illustrations.794ec34c0ac2f8f97ec9.png",
     "static/media/header-branding.png": "/rina-bina/static/media/header-branding.0f2d3c2fcf9fdbc9ac4b.png",
     "static/media/header-recommendations.png": "/rina-bina/static/media/header-recommendations.55eee58261bfc40f8a9f.png",
     "static/media/paper3.png": "/rina-bina/static/media/paper3.4614b2f4913a1469bbf7.png",
+    "static/media/contact-page.png": "/rina-bina/static/media/contact-page.df2b97702fb4f6b974f4.png",
+    "static/media/illustrations-page.png": "/rina-bina/static/media/illustrations-page.90711bf1a52504652610.png",
     "static/media/home-illustrations.png": "/rina-bina/static/media/home-illustrations.521ce4ae8324a3029be8.png",
     "static/media/קקלפים 4.jpg": "/rina-bina/static/media/קקלפים 4.b2b01f068978b0529b3f.jpg",
     "static/media/קלפים.jpg": "/rina-bina/static/media/קלפים.05fe361d2849728c52fb.jpg",
@@ -20,6 +22,7 @@
     "static/media/לולה.jpg": "/rina-bina/static/media/לולה.7f9edce9af4d8d9609ed.jpg",
     "static/media/השיער של תמר 1.jpg": "/rina-bina/static/media/השיער של תמר 1.a2e9fd5004fe3afa1cd4.jpg",
     "static/media/קלפים 3.jpg": "/rina-bina/static/media/קלפים 3.d1b80648b5e5fbd9dad4.jpg",
+    "static/media/branding-page.png": "/rina-bina/static/media/branding-page.4ed38f11971d3527aafc.png",
     "static/media/לולה 2.jpg": "/rina-bina/static/media/לולה 2.69c19bb7137f1cbcefb1.jpg",
     "static/media/שחר.jpg": "/rina-bina/static/media/שחר.9e84b5d42e6af0945f4f.jpg",
     "static/media/סבתא וילדה.jpg": "/rina-bina/static/media/סבתא וילדה.a2fe160e846baa373f4e.jpg",
@@ -48,11 +51,11 @@
     "static/media/Ruda-Bold.ttf": "/rina-bina/static/media/Ruda-Bold.f1730378958d40cee1fa.ttf",
     "static/media/logo.png": "/rina-bina/static/media/logo.8f72da5613ff70a0ed49.png",
     "index.html": "/rina-bina/index.html",
-    "main.4b01a80d.css.map": "/rina-bina/static/css/main.4b01a80d.css.map",
-    "main.05792f76.js.map": "/rina-bina/static/js/main.05792f76.js.map"
+    "main.03fdb5e9.css.map": "/rina-bina/static/css/main.03fdb5e9.css.map",
+    "main.d68810bb.js.map": "/rina-bina/static/js/main.d68810bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b01a80d.css",
-    "static/js/main.05792f76.js"
+    "static/css/main.03fdb5e9.css",
+    "static/js/main.d68810bb.js"
   ]
 }
