@@ -19,7 +19,14 @@ export function BrandingPage() {
   const images = importAll(require.context('../assets/imgs/branding', false, /\.(png|jpe?g|svg)$/));
   return (
     <section className='branding-carousel'>
-      <Carousel onClickItem={test} autoPlay={true} interval={5000} infiniteLoop={true} showThumbs={false}>
+      <Carousel
+        onClickItem={test}
+        emulateTouch={true}
+        autoPlay={true}
+        interval={5000}
+        infiniteLoop={true}
+        showThumbs={false}
+      >
         {images.imgUrl.map((img, idx) => {
           return (
             <div key={idx}>

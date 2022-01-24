@@ -38,13 +38,13 @@ export class HomePage extends Component {
       <section className='home-page'>
         <h1 className='title'>WELCOME</h1>
         <section className='images-container'>
-          {this.pages.map((page) => {
+          {this.pages.map((page, idx) => {
             return (
               <div className='image-item' key={page.name}>
                 <img
-                  className='image-txt'
+                  className={`image-txt image-txt-${idx + 1}`}
                   ref={page.ref}
-                  style={{ bottom: page.txtPos.y, left: page.txtPos.x }}
+                  // style={{ bottom: page.txtPos.y, left: page.txtPos.x }}
                   onClick={() => this.changeRoute(`/${page.name}/`)}
                   src={require(`../assets/imgs/elements/${page.name}-txt.png`)}
                   alt={`${page.name}-page`}

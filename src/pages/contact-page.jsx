@@ -23,29 +23,29 @@ My services are super professional starting from stage of a creative idea and en
 Feel free to contact me:`;
   return (
     <section className='contact-page'>
-      <div>
-        <img src={require('../assets/imgs/elements/about.png')} alt='rina lev' />
-      </div>
+      {/* <div> */}
+      <img src={require('../assets/imgs/elements/about.png')} alt='rina lev' />
+      {/* </div> */}
       <section className='text-container'>
-        <p className='txt-he'>{textHe}</p>
         <p>{textEn}</p>
-        <h2>rina.lev@outlook.co.il 972ּּ+549844066</h2>
-        <form action='https://formsubmit.co/omermetrim@gmail.com' method='POST'>
-          <section className='input-container'>
-            <label htmlFor='name'>Name</label>
-            <input type='text' name='name' id='name' placeholder='Name' />
-          </section>
-          <section className='input-container'>
-            <label htmlFor='email'>Email</label>
-            <input type='email' name='email' id='email' placeholder='Email' />
-          </section>
-          <section className='input-container'>
-            <label htmlFor='msg'>Message</label>
-            <textarea type='text' name='msg' id='msg' placeholder='Message' />
-          </section>
-          <button>Send</button>
-        </form>
+        <p className='txt-he'>{textHe}</p>
       </section>
+      <form action='https://formsubmit.co/omermetrim@gmail.com' method='POST'>
+        <h2>rina.lev@outlook.co.il 972ּּ+549844066</h2>
+        <section className='input-container'>
+          <label htmlFor='name'>Name</label>
+          <input type='text' name='name' id='name' placeholder='Name' />
+        </section>
+        <section className='input-container'>
+          <label htmlFor='email'>Email</label>
+          <input type='email' name='email' id='email' placeholder='Email' />
+        </section>
+        <section className='input-container'>
+          <label htmlFor='msg'>Message</label>
+          <textarea type='text' name='msg' id='msg' placeholder='Message' />
+        </section>
+        <button>Send</button>
+      </form>
     </section>
   );
 }
