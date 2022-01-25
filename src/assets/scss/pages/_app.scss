@@ -1,5 +1,7 @@
 .mainApp {
+  position: relative;
   display: flex;
+  overflow-y: hidden;
   .content-area {
     width: 100%;
     display: flex;

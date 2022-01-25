@@ -9,29 +9,36 @@ export class HomePage extends Component {
     mouseX: 0,
   };
   pages = [
-    { name: 'branding', txtPos: { x: '160px', y: '170px' }, ref: createRef() },
-    { name: 'illustrations', txtPos: { x: '', y: '265px' }, ref: createRef() },
-    { name: 'contact', txtPos: { x: '65px', y: '190px' }, ref: createRef() },
+    { name: 'branding', ref: createRef() },
+    { name: 'illustrations', ref: createRef() },
+    { name: 'contact', ref: createRef() },
   ];
 
-  componentDidMount() {}
+  componentDidMount() {
+    document.addEventListener('mousemove', (e) => {
+      const { pageX, pageY } = e;
+      const els = document.querySelectorAll('.image-txt');
+      els.forEach((el, idx) => {
+        const { left, top, width, height } = el.getBoundingClientRect();
+        const center = this.getCenter(left, top, width, height);
+        let len = window.innerWidth - center.x;
+        if (len < window.innerWidth / 2) len = center.x;
+        let angleX = (40 / window.innerWidth) * pageX - 20;
+        let angleY = -(40 / window.innerHeight) * pageY + 20;
 
-  // onMove = (ev) => {
-  //   debugger;
-  //   this.setState({ mouseX: ev.clientX });
-  // };
+        if (left <= pageX && pageX <= left + width && top <= pageY && pageY <= top + height) {
+          el.style.transform = `scale(1.1)`;
+        } else {
+          el.style.transform = `rotateY(${angleX}deg)rotateX(${angleY}deg)`;
+        }
+      });
+    });
+  }
 
-  // getCenter(element) {
-  //   const { left, top, width, height } = element.getBoundingClientRect();
-  //   return { x: left + width / 2, y: top + height / 2 };
-  // }
-
-  // const arrow = document.querySelector("#arrow");
-  // const arrowCenter = getCenter(arrow);
-  // addEventListener("mousemove", ({clientX, clientY}) => {
-  //     const angle = Math.atan2(clientY - arrowCenter.y, clientX - arrowCenter.x);
-  //     arrow.style.transform = `rotate(${angle}rad)`;
-  // });
+  getCenter(left, top, width, height) {
+    // const { left, top, width, height } = element.getBoundingClientRect();
+    return { x: left + width / 2, y: top + height / 2 };
+  }
 
   render() {
     return (
@@ -44,7 +51,6 @@ export class HomePage extends Component {
                 <img
                   className={`image-txt image-txt-${idx + 1}`}
                   ref={page.ref}
-                  // style={{ bottom: page.txtPos.y, left: page.txtPos.x }}
                   onClick={() => this.changeRoute(`/${page.name}/`)}
                   src={require(`../assets/imgs/elements/${page.name}-txt.png`)}
                   alt={`${page.name}-page`}

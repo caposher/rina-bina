@@ -10,12 +10,10 @@ function _NavBar({ showMenu, toggleMenu, history }) {
     { link: 'contact', txt: 'Contact me' },
   ];
 
+  const elBody = document.querySelector('body');
   function doShowMenu() {
+    showMenu ? elBody.classList.add('scroll-prev') : elBody.classList.remove('scroll-prev');
     return showMenu ? 'show' : '';
-  }
-
-  function preventScrolling() {
-    return showMenu ? <div class='scroll-prev'></div> : <></>;
   }
 
   function showNav() {
@@ -23,7 +21,6 @@ function _NavBar({ showMenu, toggleMenu, history }) {
     else
       return (
         <section>
-          {/* {preventScrolling()} */}
           <nav onClick={toggleMenu} className={`nav-bar ${doShowMenu()}`}>
             {pages.map((page, idx) => {
               return (

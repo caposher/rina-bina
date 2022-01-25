@@ -27,41 +27,36 @@
     .image-item {
       position: relative;
       .image-txt {
-        // bottom: calc(100% - 80px);
         position: absolute;
-        // left: 50%;
-        // left: calc(100% - 50%);
-        transform: translateX(-50%);
         width: 70%;
         padding: 1.5em;
         z-index: 1;
         min-width: 110px;
+        transition: transform 0.3s;
       }
 
       .image-txt-1 {
         bottom: 53%;
-        left: 47%;
+        left: 15%;
         @media (min-width: 700px) {
           bottom: 173px;
-          left: 123px;
+          left: 30px;
         }
       }
 
       .image-txt-2 {
         bottom: 83%;
-        left: 55%;
+        left: 6%;
         @media (min-width: 700px) {
           bottom: 245px;
-          left: 117px;
+          left: 40px;
         }
       }
 
       .image-txt-3 {
         bottom: 60%;
-        left: 35%;
         @media (min-width: 700px) {
-          bottom: 190px;
-          left: 65px;
+          bottom: 195px;
         }
       }
     }

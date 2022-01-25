@@ -21,6 +21,7 @@ export function BrandingPage() {
     <section className='branding-carousel'>
       <Carousel
         onClickItem={test}
+        showIndicators={false}
         emulateTouch={true}
         autoPlay={true}
         interval={5000}
