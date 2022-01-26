@@ -15,9 +15,11 @@ class App extends Component {
   };
 
   toggleMenu = () => {
-    this.setState((prevState) => {
-      return { showMenu: !prevState.showMenu };
-    });
+    if (window.innerWidth < 800) {
+      this.setState((prevState) => {
+        return { showMenu: !prevState.showMenu };
+      });
+    }
   };
 
   render() {
