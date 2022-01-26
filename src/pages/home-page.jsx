@@ -2,7 +2,6 @@ import { Component, createRef } from 'react';
 
 export class HomePage extends Component {
   changeRoute(route) {
-    debugger;
     this.props.history.push(route);
   }
   state = {
@@ -36,7 +35,6 @@ export class HomePage extends Component {
   }
 
   getCenter(left, top, width, height) {
-    // const { left, top, width, height } = element.getBoundingClientRect();
     return { x: left + width / 2, y: top + height / 2 };
   }
 

@@ -9,9 +9,6 @@ import { HomePage } from './pages/home-page';
 import { IllustrationPage } from './pages/illustration-page';
 import { RecommendationPage } from './pages/recommendation-page';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
 class App extends Component {
   state = {
     showMenu: false,
@@ -24,17 +21,13 @@ class App extends Component {
   };
 
   render() {
-    console.log('this.state.showMenu: ', this.state.showMenu);
+    const { showMenu } = this.state;
+    console.log('showMenu', showMenu);
     return (
       <Router>
         <AppHeader />
         <section className='mainApp container'>
-          {!this.state.showMenu && (
-            <button onClick={this.toggleMenu} className='nav-btn'>
-              <FontAwesomeIcon icon={faBars} />
-            </button>
-          )}
-          <NavBar showMenu={this.state.showMenu} toggleMenu={this.toggleMenu} />
+          <NavBar showMenu={showMenu} toggleMenu={this.toggleMenu} />
           <section className='content-area'>
             <Switch>
               <Route component={ContactPage} path='/contact/'></Route>
