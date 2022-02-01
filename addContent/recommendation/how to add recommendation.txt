@@ -1,0 +1,3 @@
+enter to the recommendation text into recommend.txt file (save and exit every recommendation)
+run the addRec.bat script in the folder (check for success message)
+at success - the recommendation text will be clear from the file

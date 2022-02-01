@@ -1,0 +1,4 @@
+after all changes done in the project (add images,and recommendations)
+just run the buildProject.bat, and wait until finish (it may take couple of minutes)
+at the end the message "Published" indicate the proccess is complete and uploaded to server.
+it may take some minutes to changes appear at the website but it will update 

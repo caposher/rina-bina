@@ -32,7 +32,7 @@ export const ImageCarousel = ({ images }) => {
           return (
             <div key={idx}>
               <img src={img} alt='' />
-              <p className='legend'>{images.fileNames[idx]}</p>
+              <p className='legend'>{images.titles[idx]}</p>
             </div>
           );
         })}
@@ -41,12 +41,16 @@ export const ImageCarousel = ({ images }) => {
   );
 };
 
-export function importAllImgs(r) {
+export function importAllImgs(json, file) {
   var imgUrl = {};
-  var fileNames = [];
-  r.keys().map((item) => {
-    fileNames.push(item.replace('./', '').replace(/\.(png|jpe?g|svg)$/, ''));
-    imgUrl = r.keys().map(r);
+  var titles = [];
+  file.keys().map((item) => {
+    const fileName = item.replace('./', '');
+    const idx = json.findIndex((item) => {
+      return item.fileName === fileName;
+    });
+    titles.push(json[idx] ? json[idx].title : '');
+    imgUrl = file.keys().map(file);
   });
-  return { fileNames, imgUrl };
+  return { titles, imgUrl };
 }

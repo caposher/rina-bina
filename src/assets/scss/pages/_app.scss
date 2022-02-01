@@ -4,6 +4,7 @@
   overflow-y: hidden;
   .content-area {
     width: 100%;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
   }

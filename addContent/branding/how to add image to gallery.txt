@@ -1,0 +1,4 @@
+add image to this folder (one at a time)
+enter to the title file and write the title of this image (save and exit every image)
+run the addImage.bat script in the folder (check for success message)
+at success - the image should disappear from the folder and the title file will be clear
