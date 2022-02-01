@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rina-bina/static/css/main.5e1a08a0.css",
-    "main.js": "/rina-bina/static/js/main.67fcf5aa.js",
+    "main.css": "/rina-bina/static/css/main.7bb6c300.css",
+    "main.js": "/rina-bina/static/js/main.3ce74b9d.js",
     "static/media/header-contact.png": "/rina-bina/static/media/header-contact.4446488628b1d54bea47.png",
     "static/media/about.png": "/rina-bina/static/media/about.597e8a95901525f5df21.png",
     "static/media/header-illustrations.png": "/rina-bina/static/media/header-illustrations.794ec34c0ac2f8f97ec9.png",
@@ -25,7 +25,6 @@
     "static/media/branding-page.png": "/rina-bina/static/media/branding-page.4ed38f11971d3527aafc.png",
     "static/media/לולה 2.jpg": "/rina-bina/static/media/לולה 2.69c19bb7137f1cbcefb1.jpg",
     "static/media/שחר.jpg": "/rina-bina/static/media/שחר.9e84b5d42e6af0945f4f.jpg",
-    "static/media/סבתא וילדה.jpg": "/rina-bina/static/media/סבתא וילדה.a2fe160e846baa373f4e.jpg",
     "static/media/הוויה.jpg": "/rina-bina/static/media/הוויה.273050e70b68d020ae1d.jpg",
     "static/media/רופאים אברהם.jpg": "/rina-bina/static/media/רופאים אברהם.156d363daf04435fa2b9.jpg",
     "static/media/איתמר.jpg": "/rina-bina/static/media/איתמר.1d4a2ea446ddf90602ef.jpg",
@@ -51,11 +50,11 @@
     "static/media/Ruda-Bold.ttf": "/rina-bina/static/media/Ruda-Bold.f1730378958d40cee1fa.ttf",
     "static/media/logo.png": "/rina-bina/static/media/logo.8f72da5613ff70a0ed49.png",
     "index.html": "/rina-bina/index.html",
-    "main.5e1a08a0.css.map": "/rina-bina/static/css/main.5e1a08a0.css.map",
-    "main.67fcf5aa.js.map": "/rina-bina/static/js/main.67fcf5aa.js.map"
+    "main.7bb6c300.css.map": "/rina-bina/static/css/main.7bb6c300.css.map",
+    "main.3ce74b9d.js.map": "/rina-bina/static/js/main.3ce74b9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e1a08a0.css",
-    "static/js/main.67fcf5aa.js"
+    "static/css/main.7bb6c300.css",
+    "static/js/main.3ce74b9d.js"
   ]
 }
