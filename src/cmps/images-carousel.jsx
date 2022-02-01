@@ -17,7 +17,7 @@ export const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <section>
+    <section className='image-carousel'>
       <ImageLightBox images={images} isOpen={isOpen} index={showIdx} onClick={onClick}></ImageLightBox>
       <Carousel
         onClickItem={handleClick}
