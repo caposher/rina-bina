@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rina-bina/static/css/main.fb7640db.css",
+    "main.css": "/rina-bina/static/css/main.a797fc3b.css",
     "main.js": "/rina-bina/static/js/main.d2b9b6f6.js",
     "static/media/header-contact.png": "/rina-bina/static/media/header-contact.4446488628b1d54bea47.png",
     "static/media/about.png": "/rina-bina/static/media/about.597e8a95901525f5df21.png",
@@ -50,11 +50,11 @@
     "static/media/Ruda-Bold.ttf": "/rina-bina/static/media/Ruda-Bold.f1730378958d40cee1fa.ttf",
     "static/media/logo.png": "/rina-bina/static/media/logo.8f72da5613ff70a0ed49.png",
     "index.html": "/rina-bina/index.html",
-    "main.fb7640db.css.map": "/rina-bina/static/css/main.fb7640db.css.map",
+    "main.a797fc3b.css.map": "/rina-bina/static/css/main.a797fc3b.css.map",
     "main.d2b9b6f6.js.map": "/rina-bina/static/js/main.d2b9b6f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb7640db.css",
+    "static/css/main.a797fc3b.css",
     "static/js/main.d2b9b6f6.js"
   ]
 }
