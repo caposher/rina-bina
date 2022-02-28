@@ -30,7 +30,7 @@ export const ImageCarousel = ({ images }) => {
         onClickItem={handleClick}
         showIndicators={false}
         emulateTouch={true}
-        autoPlay={false}
+        autoPlay={true}
         interval={5000}
         infiniteLoop={true}
         showThumbs={false}

@@ -1,7 +1,9 @@
 .image-carousel {
   display: flex;
   justify-content: center;
-
+  &:hover {
+    cursor: pointer;
+  }
   @media (min-width: 800px) {
     max-width: calc(100% - 10em);
   }
@@ -12,4 +14,8 @@
   padding: 0.5em !important;
   width: 80% !important;
   margin-left: -40% !important;
+}
+
+.ril__caption {
+  justify-content: center !important;
 }

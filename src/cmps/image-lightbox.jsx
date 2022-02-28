@@ -9,7 +9,7 @@ export const ImageLightBox = ({ images, isOpen, index, onClick }) => {
     setPhotoIndex(index);
   }, [index]);
 
-  const { imgUrl } = images;
+  const { imgUrl, titles } = images;
   if (!isOpen) return <></>;
   return (
     <Lightbox
@@ -19,6 +19,7 @@ export const ImageLightBox = ({ images, isOpen, index, onClick }) => {
       onCloseRequest={onClick}
       onMovePrevRequest={() => setPhotoIndex((photoIndex + imgUrl.length - 1) % imgUrl.length)}
       onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % imgUrl.length)}
+      imageCaption={titles[photoIndex]}
     />
   );
 };
