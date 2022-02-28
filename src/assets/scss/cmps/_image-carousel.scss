@@ -1,5 +1,15 @@
 .image-carousel {
   display: flex;
   justify-content: center;
-  max-width: calc(100% - 10em);
+
+  @media (min-width: 800px) {
+    max-width: calc(100% - 10em);
+  }
+}
+
+.text-carousel {
+  bottom: 0 !important;
+  padding: 0.5em !important;
+  width: 80% !important;
+  margin-left: -40% !important;
 }

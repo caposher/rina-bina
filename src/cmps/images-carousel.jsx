@@ -16,6 +16,13 @@ export const ImageCarousel = ({ images }) => {
     onClick();
   };
 
+  const changeTitleStyle = () => {
+    const legends = document.querySelectorAll('.legend');
+    legends.forEach((l) => {
+      l.classList.add('text-carousel');
+    });
+  };
+
   return (
     <section className='image-carousel'>
       <ImageLightBox images={images} isOpen={isOpen} index={showIdx} onClick={onClick}></ImageLightBox>
@@ -23,14 +30,14 @@ export const ImageCarousel = ({ images }) => {
         onClickItem={handleClick}
         showIndicators={false}
         emulateTouch={true}
-        autoPlay={true}
+        autoPlay={false}
         interval={5000}
         infiniteLoop={true}
         showThumbs={false}
       >
         {images.imgUrl.map((img, idx) => {
           return (
-            <div key={idx}>
+            <div key={idx} onLoad={changeTitleStyle}>
               <img src={img} alt='' />
               <p className='legend'>{images.titles[idx]}</p>
             </div>
